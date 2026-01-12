@@ -29,18 +29,33 @@
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
     </properties>
+    <!-- DEPENDENCY MANAGEMENT (VERSIONS ONLY) -->
+    <dependencyManagement>
+        <dependencies>
+
+            <!-- Lombok version managed here -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.30</version>
+                <scope>provided</scope>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
 
     <!-- MODULES (MICROSERVICES) -->
     <modules>
         <module>auth-service</module>
-        <module>user-service</module>
         <module>bug-service</module>
-        <module>notification-service</module>
+       <!-- <module>notification-service</module>
         <module>ml-service</module>
         <module>analytics-service</module>
         <module>file-service</module>
         <module>search-service</module>
         <module>api-gateway</module>
+        <module>user-service</module>
+-->
     </modules>
 
 </project>
