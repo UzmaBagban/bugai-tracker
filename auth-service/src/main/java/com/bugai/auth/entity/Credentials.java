@@ -10,6 +10,7 @@ import java.util.UUID;
 @Table(name="credentials")
 @Builder
 @Data
+@AllArgsConstructor
 @NoArgsConstructor
 public class Credentials {
     @Id
